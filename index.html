@@ -461,8 +461,8 @@
       </div>
       <div class="gallery" id="gallery-grid">
         <figure>
-          <img src="facade.jpg" alt="Façade du Garage Auto Service Plus au 420, 1ère Avenue à Lachine" loading="lazy">
-          <figcaption>Garage Auto Service Plus - 420, 1ère Avenue, Lachine.</figcaption>
+          <img src="facade.jpg" alt="Façade du Garage Auto Service Plus au 420, 1re Avenue à Lachine" loading="lazy">
+          <figcaption>Garage Auto Service Plus - 420, 1re Avenue, Lachine.</figcaption>
         </figure>
         <figure>
           <img src="atelier.jpg" alt="Véhicules en réparation dans l'atelier" loading="lazy">
@@ -562,15 +562,6 @@
     "Surveillez la batterie avant l'hiver : le froid réduit sa capacité et c'est la période où les pannes de démarrage sont les plus fréquentes.",
     "Un volant qui vibre à haute vitesse est souvent un signe de pneus déséquilibrés — un simple équilibrage règle souvent le problème."
   ];
-  (function(){
-    var start = new Date(new Date().getFullYear(), 0, 0);
-    var diff = new Date() - start;
-    var dayOfYear = Math.floor(diff / 86400000);
-    var tip = astuces[dayOfYear % astuces.length];
-    var titles = ["Le saviez-vous ?", "Astuce du jour", "Petit conseil", "À retenir"];
-    document.getElementById('tip-title').textContent = titles[dayOfYear % titles.length];
-    document.getElementById('tip-text').textContent = tip;
-    document.getElementById('tip-meta').textContent = new Date().toLocaleDateString('fr-CA', { day:'numeric', month:'long', year:'numeric' });
   (function(){
     var start = new Date(new Date().getFullYear(), 0, 0);
     var diff = new Date() - start;
