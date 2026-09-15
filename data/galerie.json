@@ -1,0 +1,9 @@
+{
+  "photos": [
+    { "image": "/facade.jpg", "caption": "Garage Auto Service Plus - 420, 1re Avenue, Lachine." },
+    { "image": "/atelier.jpg", "caption": "L'atelier en service pour la mécanique générale." },
+    { "image": "/atelier-2.jpg", "caption": "Nos ponts élévateurs et notre équipement d'atelier." },
+    { "image": "/pneus.jpg", "caption": "Notre inventaire de pneus, toutes saisons." },
+    { "image": "/atelier-3.jpg", "caption": "Poste de travail équipé pour la mécanique générale." }
+  ]
+}

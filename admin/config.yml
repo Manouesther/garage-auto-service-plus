@@ -1,0 +1,35 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: simple
+media_folder: "uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "galerie"
+    label: "Galerie photos"
+    files:
+      - file: "data/galerie.json"
+        label: "Photos de l'atelier"
+        name: "galerie"
+        fields:
+          - label: "Photos"
+            name: "photos"
+            widget: "list"
+            fields:
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Légende", name: "caption", widget: "string"}
+
+  - name: "astuces"
+    label: "Astuces du jour"
+    files:
+      - file: "data/astuces.json"
+        label: "Liste des astuces"
+        name: "astuces"
+        fields:
+          - label: "Astuces"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Texte de l'astuce", name: "text", widget: "text"}

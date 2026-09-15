@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Garage Auto Service Plus | Mécanique générale à Lachine</title>
+<meta name="description" content="Garage Auto Service Plus à Lachine : mécanique générale, freins, suspension, direction, diagnostic, pneus, changement d'huile et antirouille. Appelez le 514 601 0552.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "Garage Auto Service Plus",
+  "image": "https://www.gasp514.ca/facade.jpg",
+  "telephone": "+15146010552",
+  "email": "Garageautoserviceplus26@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "420, 1re Avenue",
+    "addressLocality": "Lachine",
+    "addressRegion": "QC",
+    "postalCode": "H8S 2S3",
+    "addressCountry": "CA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.4392204,
+    "longitude": -73.6643281
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  ],
+  "priceRange": "$$"
+}
+</script>
+<style>
+  :root{
+    --red:#9E1B32;
+    --red-dark:#751326;
+    --ink:#171717;
+    --muted:#62646B;
+    --soft:#F5F3F1;
+    --panel:#FFFFFF;
+    --line:#E3E0DC;
+    --shadow:0 18px 50px rgba(23,23,23,.12);
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+  .wrap{width:min(1120px,100%);margin:0 auto;padding:0 22px}
+  .eyebrow{font-size:13px;font-weight:800;color:var(--red);letter-spacing:.12em;text-transform:uppercase}
+  h1,h2,h3{font-family:'Oswald',Arial,sans-serif;line-height:1.08}
+  h1{font-size:clamp(38px,6vw,74px);text-transform:uppercase;letter-spacing:.01em}
+  h2{font-size:clamp(28px,4vw,44px);text-transform:uppercase}
+  h3{font-size:21px}
+  p{color:var(--muted)}
+
+  .topbar{background:var(--ink);color:#fff;font-size:14px}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:42px}
+  .topbar a{text-decoration:none;font-weight:700}
+
+  header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .headbar{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:78px}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+  .brand img{width:48px;height:48px;object-fit:contain;flex:0 0 auto}
+  .brand span{display:block;font-family:'Oswald',Arial,sans-serif;text-transform:uppercase;line-height:1}
+  .brand .small{font-size:15px;color:var(--ink);letter-spacing:.04em}
+  .brand .name{font-size:21px;color:var(--red);font-weight:700;white-space:nowrap}
+  nav{display:flex;align-items:center;gap:24px;font-size:14px;font-weight:800}
+  nav a{text-decoration:none;color:#2d2d2d}
+  nav a:hover{color:var(--red)}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:46px;padding:13px 22px;border-radius:6px;font-weight:800;text-decoration:none;border:2px solid transparent;transition:.18s ease}
+  .btn-primary{background:var(--red);color:#fff}
+  .btn-primary:hover{background:var(--red-dark);transform:translateY(-1px)}
+  .btn-outline{border-color:var(--ink);color:var(--ink);background:#fff}
+  .btn-outline:hover{border-color:var(--red);color:var(--red)}
+
+  .hero{position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(0,0,0,.74),rgba(0,0,0,.38)),url('facade.jpg') center/cover;min-height:690px;color:#fff}
+  .hero .wrap{display:grid;align-items:end;min-height:690px;padding-top:96px;padding-bottom:56px}
+  .hero-content{max-width:780px}
+  .hero p{max-width:650px;margin:20px 0 28px;color:rgba(255,255,255,.9);font-size:19px}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+  .hero .btn-outline{background:rgba(255,255,255,.94)}
+  .quick-card{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:44px;max-width:860px;background:rgba(255,255,255,.25);border:1px solid rgba(255,255,255,.28);box-shadow:var(--shadow)}
+  .quick-card div{background:rgba(255,255,255,.95);color:var(--ink);padding:18px}
+  .quick-card strong{display:block;font-size:15px;margin-bottom:4px}
+  .quick-card span{display:block;color:var(--muted);font-size:14px}
+
+  section{padding:82px 0}
+  .section-head{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:34px}
+  .section-head p{max-width:520px}
+  .alt{background:var(--soft)}
+
+  .services-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+  .service{min-height:190px;padding:27px 24px;background:#fff;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .service-icon{width:42px;height:42px;border-radius:6px;background:var(--red);color:#fff;display:grid;place-items:center;margin-bottom:18px}
+  .service-icon svg{width:23px;height:23px}
+  .service h3{margin-bottom:8px}
+  .service p{font-size:15px}
+
+  .split{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:center}
+  .photo-frame{position:relative}
+  .photo-frame img{width:100%;height:520px;object-fit:cover;border-radius:8px;box-shadow:var(--shadow)}
+  .badge{position:absolute;left:22px;bottom:22px;background:#fff;padding:18px 20px;border-left:5px solid var(--red);box-shadow:0 12px 30px rgba(0,0,0,.18);max-width:290px}
+  .badge strong{display:block;font-family:'Oswald';font-size:23px;line-height:1.05;text-transform:uppercase}
+  .check-list{display:grid;gap:16px;margin-top:28px}
+  .check{display:flex;gap:13px;align-items:flex-start}
+  .check span{display:grid;place-items:center;width:25px;height:25px;background:var(--red);color:#fff;border-radius:50%;font-weight:900;flex:0 0 auto;font-size:14px}
+  .check strong{display:block;margin-bottom:2px}
+  .check p{font-size:15px}
+
+  .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+  .gallery figure{background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+  .gallery img{width:100%;height:260px;object-fit:cover}
+  figcaption{padding:14px 16px;color:var(--muted);font-size:14px}
+
+  .cta-band{background:var(--ink);color:#fff;padding:48px 0}
+  .cta-band .wrap{display:flex;align-items:center;justify-content:space-between;gap:22px}
+  .cta-band p{color:rgba(255,255,255,.78)}
+
+  .contact-grid{display:grid;grid-template-columns:.88fr 1.12fr;gap:34px;align-items:stretch}
+  .contact-panel{background:#fff;border:1px solid var(--line);border-radius:8px;padding:28px}
+  .contact-item{display:flex;gap:14px;padding:17px 0;border-bottom:1px solid var(--line)}
+  .contact-item:first-child{padding-top:0}
+  .contact-item:last-child{border-bottom:0;padding-bottom:0}
+  .contact-item svg{width:24px;height:24px;color:var(--red);flex:0 0 auto;margin-top:2px}
+  .label{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:800}
+  .value{font-weight:800;overflow-wrap:anywhere}
+  .hours{width:100%;border-collapse:collapse;margin-top:24px}
+  .hours td{padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
+  .hours td:last-child{text-align:right;color:var(--muted);font-weight:700}
+  .hours-note{margin-top:24px;padding:16px 18px;background:var(--soft);border-left:5px solid var(--red);border-radius:8px}
+  .hours-note strong{display:block;font-family:'Oswald',Arial,sans-serif;font-size:22px;line-height:1.05;text-transform:uppercase}
+  .hours-note span{display:block;margin-top:5px;color:var(--muted);font-size:14px}
+  .hours{margin-top:16px}
+  .map{position:relative;min-height:470px;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#ddd}
+  .map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .map-fallback{position:absolute;left:18px;right:18px;bottom:18px;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:16px;background:rgba(255,255,255,.96);border:1px solid var(--line);border-left:5px solid var(--red);border-radius:8px;padding:16px;box-shadow:0 12px 30px rgba(0,0,0,.18)}
+  .map-fallback strong{display:block;font-family:'Oswald',Arial,sans-serif;font-size:20px;line-height:1.05;text-transform:uppercase}
+  .map-fallback span{display:block;color:var(--muted);font-size:14px}
+  .map-fallback .btn{min-height:40px;padding:9px 14px;font-size:14px;white-space:nowrap}
+
+  footer{background:#111;color:#fff;padding:30px 0 96px}
+  footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+  footer p{color:#bdbdbd;font-size:13px}
+
+  .mobile-cta{position:fixed;left:0;right:0;bottom:0;z-index:30;display:none;background:#fff;border-top:1px solid var(--line);padding:10px 14px;box-shadow:0 -10px 30px rgba(0,0,0,.12)}
+  .mobile-cta a{flex:1;padding:12px 10px;font-size:14px}
+
+  /* divider with gear texture, used between bands for a less "template" feel */
+  .gear-divider{position:relative;height:64px;overflow:hidden;background:var(--ink)}
+  .gear-divider svg{position:absolute;top:50%;left:0;transform:translateY(-50%);opacity:.14;width:100%;height:160px}
+
+  /* astuce du jour */
+  .tip-card{display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-left:5px solid var(--red);border-radius:8px;padding:26px 28px;box-shadow:var(--shadow)}
+  .tip-icon{width:52px;height:52px;border-radius:50%;background:var(--soft);display:grid;place-items:center;flex:0 0 auto}
+  .tip-icon svg{width:26px;height:26px;color:var(--red)}
+  .tip-card h3{margin-bottom:6px}
+  .tip-meta{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:800;margin-top:14px}
+
+  /* formulaire rendez-vous / assistance */
+  .form-panel{background:#fff;border:1px solid var(--line);border-radius:8px;padding:32px;box-shadow:var(--shadow)}
+  .field-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .field{margin-bottom:18px}
+  .field label{display:block;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--ink);margin-bottom:7px}
+  .field input[type=text],.field input[type=tel],.field input[type=email],.field select,.field textarea,.field input[type=file]{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:6px;font-family:'Inter',Arial,sans-serif;font-size:15px;background:#fff;color:var(--ink)}
+  .field textarea{resize:vertical;min-height:110px}
+  .radio-group{display:flex;gap:22px;flex-wrap:wrap}
+  .radio-option{display:flex;align-items:center;gap:8px;font-size:15px}
+  .radio-option input{width:auto}
+  .field-hint{font-size:13px;color:var(--muted);margin-top:6px}
+  .visually-hidden{position:absolute;left:-9999px}
+
+  @media (max-width:620px){
+    .field-row{grid-template-columns:1fr}
+    .form-panel{padding:22px}
+  }
+
+  @media (max-width:900px){
+    nav{display:none}
+    .topbar .wrap{justify-content:center;text-align:center}
+    .topbar span{display:none}
+    .hero,.hero .wrap{min-height:650px}
+    .quick-card{grid-template-columns:1fr}
+    .section-head{display:block}
+    .section-head p{margin-top:12px}
+    .services-grid{grid-template-columns:1fr 1fr}
+    .split,.contact-grid,.gallery{grid-template-columns:1fr}
+    .photo-frame img{height:340px}
+    .gallery img{height:220px}
+    .cta-band .wrap{display:block}
+    .cta-band .btn{margin-top:22px}
+  }
+
+  @media (max-width:620px){
+    .wrap{padding:0 18px}
+    .headbar{min-height:70px}
+    .brand img{width:42px;height:42px}
+    .brand .small{font-size:13px}
+    .brand .name{font-size:18px}
+    header .btn{display:none}
+    .hero{background-position:58% center}
+    .hero,.hero .wrap{min-height:640px}
+    .hero .wrap{padding-top:60px;padding-bottom:34px}
+    .hero p{font-size:17px}
+    .hero-actions .btn{width:100%}
+    section{padding:58px 0}
+    .services-grid{grid-template-columns:1fr}
+    .service{min-height:auto}
+    .badge{position:static;margin-top:-52px;margin-left:16px;margin-right:16px}
+    .contact-panel{padding:22px}
+    .map{min-height:360px}
+    .map-fallback{display:block}
+    .map-fallback .btn{width:100%;margin-top:12px}
+    .mobile-cta{display:flex;gap:10px}
+  }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="wrap">
+    <span>420, 1re Avenue, Lachine, QC H8S 2S3</span>
+    <a href="tel:+15146010552">514 601 0552</a>
+  </div>
+</div>
+
+<header>
+  <div class="wrap headbar">
+    <a class="brand" href="#top" aria-label="Garage Auto Service Plus">
+      <img src="logo_gasp.svg" alt="">
+      <span>
+        <span class="small">Garage</span>
+        <span class="name">Auto Service Plus</span>
+      </span>
+    </a>
+    <nav aria-label="Navigation principale">
+      <a href="#services">Services</a>
+      <a href="#astuce">Astuce du jour</a>
+      <a href="#rendez-vous">Rendez-vous</a>
+      <a href="#atelier">Atelier</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-primary" href="tel:+15146010552">Appeler</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-label="Garage Auto Service Plus">
+    <div class="wrap">
+      <div class="hero-content">
+        <div class="eyebrow">Mécanique générale à Lachine</div>
+        <h1>Un garage local, clair et efficace pour votre auto.</h1>
+        <p>Freins, suspension, direction, diagnostic, pneus, changement d'huile et antirouille. On vous explique le problème simplement avant de réparer.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:+15146010552">Appeler maintenant</a>
+          <a class="btn btn-outline" href="#services">Voir les services</a>
+        </div>
+        <div class="quick-card" aria-label="Informations rapides">
+          <div><strong>Diagnostic clair</strong><span>Explications avant les travaux</span></div>
+          <div><strong>Ouvert 7 jours</strong><span>9h00 - 18h00, tous les jours</span></div>
+          <div><strong>Garage local</strong><span>Freins, pneus, suspension et entretien</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Nos services</div>
+          <h2>Entretien et réparation automobile</h2>
+        </div>
+        <p>Des services essentiels pour garder votre véhicule fiable, sécuritaire et prêt pour les routes du Québec.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3a4.5 4.5 0 0 0-5.4 5.4l-5.8 5.8a2.1 2.1 0 0 0 3 3l5.8-5.8a4.5 4.5 0 0 0 5.4-5.4l-3 3-3-3 3-3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div>
+          <h3>Freins</h3>
+          <p>Inspection, entretien et remplacement des pièces de freinage pour une conduite sécuritaire.</p>
+        </article>
+        <article class="service">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 17h14M7 17l2-7h6l2 7M8 7h8M8 21h.01M16 21h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <h3>Suspension et direction</h3>
+          <p>Diagnostic des bruits, vibrations et problèmes de tenue de route.</p>
+        </article>
+        <article class="service">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16v10H4zM8 7V5h8v2M8 17v2m8-2v2M8 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Diagnostic</h3>
+          <p>Lecture des codes, vérification des symptômes et explications claires avant les travaux.</p>
+        </article>
+        <article class="service">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="2" stroke="currentColor" stroke-width="2"/><path d="M12 4v4m0 8v4M4 12h4m8 0h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <h3>Pneus</h3>
+          <p>Installation, rotation, réparation et équilibrage pour les saisons été et hiver.</p>
+        </article>
+        <article class="service">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M7 3h10l1 4H6l1-4Zm-1 4h12v13H6V7Zm4 4h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Changement d'huile</h3>
+          <p>Entretien régulier pour protéger le moteur et prolonger la vie du véhicule.</p>
+        </article>
+        <article class="service">
+          <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3 5 6v5c0 4.5 3 8.4 7 10 4-1.6 7-5.5 7-10V6l-7-3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m9 12 2 2 4-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Antirouille</h3>
+          <p>Protection adaptée aux hivers québécois pour aider à préserver la carrosserie.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap split">
+      <div class="photo-frame">
+        <img src="atelier.jpg" alt="Atelier du Garage Auto Service Plus avec véhicules sur ponts élévateurs" loading="lazy">
+        <div class="badge"><strong>Service honnête</strong><p>Un diagnostic expliqué clairement avant de commencer.</p></div>
+      </div>
+      <div>
+        <div class="eyebrow">Pourquoi nous choisir</div>
+        <h2>Un service direct, pratique et sans surprise</h2>
+        <div class="check-list">
+          <div class="check"><span>1</span><div><strong>Prise en charge rapide</strong><p>On vise des délais simples et efficaces pour les entretiens et réparations courantes.</p></div></div>
+          <div class="check"><span>2</span><div><strong>Explications claires</strong><p>Vous comprenez ce qui est urgent, ce qui peut attendre et pourquoi la réparation est proposée.</p></div></div>
+          <div class="check"><span>3</span><div><strong>Mécanique générale complète</strong><p>Un seul endroit pour les freins, pneus, suspension, direction, diagnostic, huile et antirouille.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="gear-divider" aria-hidden="true">
+    <svg viewBox="0 0 800 160" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" stroke="#fff" stroke-width="6">
+        <circle cx="90" cy="80" r="46"/>
+        <circle cx="90" cy="80" r="16"/>
+        <circle cx="330" cy="80" r="60"/>
+        <circle cx="330" cy="80" r="20"/>
+        <circle cx="600" cy="80" r="40"/>
+        <circle cx="600" cy="80" r="14"/>
+        <circle cx="740" cy="80" r="52"/>
+      </g>
+    </svg>
+  </div>
+
+  <section id="astuce" class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Un conseil, chaque jour</div>
+          <h2>Astuce mécanique du jour</h2>
+        </div>
+        <p>Un petit truc simple pour garder votre véhicule en bon état entre deux visites au garage.</p>
+      </div>
+      <div class="tip-card">
+        <div class="tip-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="2"/></svg>
+        </div>
+        <div>
+          <h3 id="tip-title">Chargement du conseil…</h3>
+          <p id="tip-text"></p>
+          <div class="tip-meta" id="tip-meta"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="rendez-vous">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Rendez-vous &amp; assistance</div>
+          <h2>Prenez rendez-vous ou décrivez votre panne</h2>
+        </div>
+        <p>Décrivez votre problème et joignez des photos si possible — ça nous aide à mieux vous conseiller avant même votre arrivée au garage.</p>
+      </div>
+      <div class="form-panel">
+        <form name="rendez-vous" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data" action="/merci.html">
+          <input type="hidden" name="form-name" value="rendez-vous">
+          <p class="visually-hidden"><label>Ne rien inscrire ici : <input name="bot-field"></label></p>
+
+          <div class="field">
+            <label>Type de demande</label>
+            <div class="radio-group">
+              <label class="radio-option"><input type="radio" name="type_demande" value="Rendez-vous à l'atelier" checked> Rendez-vous à l'atelier</label>
+              <label class="radio-option"><input type="radio" name="type_demande" value="Assistance à distance"> Assistance à distance (avant de venir)</label>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="nom">Nom complet</label>
+              <input type="text" id="nom" name="nom" required>
+            </div>
+            <div class="field">
+              <label for="telephone">Téléphone</label>
+              <input type="tel" id="telephone" name="telephone" required>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="courriel">Courriel (optionnel)</label>
+              <input type="email" id="courriel" name="courriel">
+            </div>
+            <div class="field">
+              <label for="service">Service concerné</label>
+              <select id="service" name="service">
+                <option>Freins</option>
+                <option>Suspension et direction</option>
+                <option>Diagnostic</option>
+                <option>Pneus</option>
+                <option>Changement d'huile</option>
+                <option>Antirouille</option>
+                <option>Je ne sais pas / autre</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="description">Décrivez la panne ou le problème</label>
+            <textarea id="description" name="description" required placeholder="Ex. : bruit métallique au freinage depuis 2 jours, plus fort à basse vitesse..."></textarea>
+          </div>
+
+          <div class="field">
+            <label for="photos">Photos à l'appui (optionnel)</label>
+            <input type="file" id="photos" name="photos" accept="image/*" multiple>
+            <div class="field-hint">Une photo du problème (fuite, voyant allumé, usure...) nous aide énormément à préparer votre visite.</div>
+          </div>
+
+          <div class="field">
+            <label>Comment préférez-vous être recontacté ?</label>
+            <div class="radio-group">
+              <label class="radio-option"><input type="radio" name="preference_contact" value="Téléphone" checked> Par téléphone</label>
+              <label class="radio-option"><input type="radio" name="preference_contact" value="Courriel"> Par courriel</label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Envoyer ma demande</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="atelier" class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Notre atelier</div>
+          <h2>Près de vous à Lachine</h2>
+        </div>
+        <p>Un garage de quartier accessible, avec un atelier équipé pour l'entretien et la réparation de tous les jours.</p>
+      </div>
+      <div class="gallery" id="gallery-grid">
+        <figure>
+          <img src="facade.jpg" alt="Façade du Garage Auto Service Plus au 420, 1ère Avenue à Lachine" loading="lazy">
+          <figcaption>Garage Auto Service Plus - 420, 1ère Avenue, Lachine.</figcaption>
+        </figure>
+        <figure>
+          <img src="atelier.jpg" alt="Véhicules en réparation dans l'atelier" loading="lazy">
+          <figcaption>L'atelier en service pour la mécanique générale.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow">Besoin d'un rendez-vous?</div>
+        <h2>Appelez le garage maintenant</h2>
+        <p>Pour une question, un diagnostic ou un entretien, contactez-nous directement.</p>
+      </div>
+      <a class="btn btn-primary" href="tel:+15146010552">514 601 0552</a>
+    </div>
+  </section>
+
+  <section id="contact" class="alt">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Contact</div>
+          <h2>Nous joindre</h2>
+        </div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-panel">
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-5.1 7-11a7 7 0 0 0-14 0c0 5.9 7 11 7 11Z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="2"/></svg>
+            <div><div class="label">Adresse</div><div class="value">420, 1re Avenue, Lachine, QC H8S 2S3</div></div>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3.1 5.2 2 2 0 0 1 5.1 3h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L9.1 10.9a16 16 0 0 0 4 4l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div><div class="label">Téléphone</div><div class="value"><a href="tel:+15146010552">514 601 0552</a></div></div>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div><div class="label">Courriel</div><div class="value"><a href="mailto:Garageautoserviceplus26@gmail.com">Garageautoserviceplus26@gmail.com</a></div></div>
+          </div>
+          <div class="hours-note">
+            <strong>Ouvert 7 jours sur 7</strong>
+            <span>9h00 à 18h00, tous les jours de la semaine.</span>
+          </div>
+          <table class="hours" aria-label="Heures d'ouverture">
+            <tr><td>Lundi - Vendredi</td><td>9h00 - 18h00</td></tr>
+            <tr><td>Samedi - Dimanche</td><td>9h00 - 18h00</td></tr>
+          </table>
+        </div>
+        <div class="map">
+          <iframe title="Carte près de Garage Auto Service Plus" loading="lazy" src="https://www.google.com/maps?q=place_id:ChIJqdLrNF8XyUwRB0EoSDsz678&output=embed"></iframe>
+          <div class="map-fallback">
+            <div>
+              <strong>Garage Auto Service Plus</strong>
+              <span>420, 1re Avenue, Lachine, QC H8S 2S3</span>
+            </div>
+            <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=Garage+Auto+Service+Plus+Lachine&query_place_id=ChIJqdLrNF8XyUwRB0EoSDsz678" target="_blank" rel="noopener">Ouvrir la carte</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Garage Auto Service Plus">
+      <img src="logo_gasp.svg" alt="">
+      <span><span class="small" style="color:#fff">Garage Auto Service Plus</span></span>
+    </a>
+    <p>&copy; 2026 Garage Auto Service Plus - Lachine, Montréal &nbsp;•&nbsp; <a href="/admin/" style="color:#8a8a8a">Espace employé</a></p>
+  </div>
+</footer>
+
+<div class="mobile-cta" aria-label="Actions rapides">
+  <a class="btn btn-outline" href="mailto:Garageautoserviceplus26@gmail.com">Courriel</a>
+  <a class="btn btn-primary" href="tel:+15146010552">Appeler</a>
+</div>
+
+<script>
+  var astuces = [
+    "Vérifiez la pression de vos pneus une fois par mois — une pression trop basse use les pneus plus vite et augmente la consommation d'essence.",
+    "Contrôlez le niveau d'huile moteur régulièrement, surtout avant un long trajet. Un niveau trop bas peut endommager le moteur.",
+    "Faites vérifier vos essuie-glaces avant l'hiver québécois — des lames usées réduisent dangereusement la visibilité sous la pluie ou la neige.",
+    "Un bruit de grincement au freinage est souvent un signe que les plaquettes doivent être changées bientôt. Mieux vaut agir avant l'usure du disque.",
+    "Faites la rotation de vos pneus tous les 8 000 à 10 000 km pour une usure plus uniforme et une durée de vie prolongée.",
+    "Le voyant moteur allumé ne veut pas toujours dire une panne grave, mais il ne faut jamais l'ignorer plus de quelques jours.",
+    "Vérifiez le liquide de lave-glace avant les longs trajets d'hiver — on en manque toujours plus vite qu'on pense.",
+    "Un antirouille annuel prolonge significativement la vie de la carrosserie, surtout avec le sel utilisé sur les routes du Québec.",
+    "Écoutez les bruits inhabituels en conduisant : un cliquetis en virage peut indiquer un problème de suspension ou de direction.",
+    "Changez votre huile selon l'intervalle recommandé par le fabricant, même si le véhicule roule peu — l'huile se dégrade aussi avec le temps.",
+    "Vérifiez vos freins avant l'hiver : les distances d'arrêt sur chaussée glacée sont beaucoup plus longues.",
+    "Une odeur de brûlé après un freinage prolongé peut signaler une surchauffe des freins — laissez refroidir et faites vérifier si ça persiste.",
+    "Le filtre à air se remplace généralement une fois par an — un filtre encrassé réduit la performance et augmente la consommation.",
+    "Surveillez la batterie avant l'hiver : le froid réduit sa capacité et c'est la période où les pannes de démarrage sont les plus fréquentes.",
+    "Un volant qui vibre à haute vitesse est souvent un signe de pneus déséquilibrés — un simple équilibrage règle souvent le problème."
+  ];
+  (function(){
+    var start = new Date(new Date().getFullYear(), 0, 0);
+    var diff = new Date() - start;
+    var dayOfYear = Math.floor(diff / 86400000);
+    var tip = astuces[dayOfYear % astuces.length];
+    var titles = ["Le saviez-vous ?", "Astuce du jour", "Petit conseil", "À retenir"];
+    document.getElementById('tip-title').textContent = titles[dayOfYear % titles.length];
+    document.getElementById('tip-text').textContent = tip;
+    document.getElementById('tip-meta').textContent = new Date().toLocaleDateString('fr-CA', { day:'numeric', month:'long', year:'numeric' });
+  (function(){
+    var start = new Date(new Date().getFullYear(), 0, 0);
+    var diff = new Date() - start;
+    var dayOfYear = Math.floor(diff / 86400000);
+    var titles = ["Le saviez-vous ?", "Astuce du jour", "Petit conseil", "À retenir"];
+
+    function renderTip(list){
+      var tip = list[dayOfYear % list.length];
+      document.getElementById('tip-title').textContent = titles[dayOfYear % titles.length];
+      document.getElementById('tip-text').textContent = (tip && tip.text) ? tip.text : tip;
+      document.getElementById('tip-meta').textContent = new Date().toLocaleDateString('fr-CA', { day:'numeric', month:'long', year:'numeric' });
+    }
+    fetch('/data/astuces.json').then(function(r){ if(!r.ok) throw 0; return r.json(); })
+      .then(function(data){ renderTip(data.items && data.items.length ? data.items : astuces); })
+      .catch(function(){ renderTip(astuces); });
+  })();
+
+  (function(){
+    fetch('/data/galerie.json').then(function(r){ if(!r.ok) throw 0; return r.json(); })
+      .then(function(data){
+        if(!data.photos || !data.photos.length) return;
+        var grid = document.getElementById('gallery-grid');
+        grid.innerHTML = '';
+        data.photos.forEach(function(p){
+          var fig = document.createElement('figure');
+          var img = document.createElement('img');
+          img.src = p.image; img.alt = p.caption || ''; img.loading = 'lazy';
+          var cap = document.createElement('figcaption');
+          cap.textContent = p.caption || '';
+          fig.appendChild(img); fig.appendChild(cap);
+          grid.appendChild(fig);
+        });
+      })
+      .catch(function(){ /* on garde les 2 photos statiques déjà dans le HTML */ });
+  })();
+</script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", function(user) {
+      if (!user) {
+        window.netlifyIdentity.on("login", function() {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+</body>
+</html>
