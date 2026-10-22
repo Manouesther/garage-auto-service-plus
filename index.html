@@ -34,7 +34,7 @@
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
       "opens": "09:00",
-      "closes": "18:00"
+      "closes": "20:00"
     }
   ],
   "priceRange": "$$"
@@ -79,6 +79,9 @@
   nav{display:flex;align-items:center;gap:24px;font-size:14px;font-weight:800}
   nav a{text-decoration:none;color:#2d2d2d}
   nav a:hover{color:var(--red)}
+  .service-promo{background:var(--soft)}
+  .service-promo-card{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;padding:28px;background:#fff;border:1px solid var(--line);border-left:5px solid var(--red);border-radius:8px;box-shadow:var(--shadow)}
+  .service-promo-card p{margin-top:8px;max-width:720px}
 
   .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:46px;padding:13px 22px;border-radius:6px;font-weight:800;text-decoration:none;border:2px solid transparent;transition:.18s ease}
   .btn-primary{background:var(--red);color:#fff}
@@ -120,7 +123,7 @@
   .check strong{display:block;margin-bottom:2px}
   .check p{font-size:15px}
 
-  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
   .gallery figure{background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden}
   .gallery img{width:100%;height:260px;object-fit:cover}
   figcaption{padding:14px 16px;color:var(--muted);font-size:14px}
@@ -181,6 +184,35 @@
   .radio-option input{width:auto}
   .field-hint{font-size:13px;color:var(--muted);margin-top:6px}
   .visually-hidden{position:absolute;left:-9999px}
+  /* pneus d'hiver */
+  .promo-band{background:var(--ink);color:#fff}
+  .promo-band h2{color:#fff}
+  .promo-band .section-head p{color:#cfcfcf}
+  .promo-band .eyebrow{color:#ff8a9c}
+  .promo-pill{display:inline-block;background:var(--red);color:#fff;font-weight:800;font-size:14px;padding:6px 12px;border-radius:999px;margin-top:12px}
+  .tire-tabs{display:flex;gap:8px;margin-bottom:14px}
+  .tire-tab{background:transparent;color:#fff;border:2px solid #4a4a4a;border-radius:6px;padding:10px 18px;font-weight:800;font-size:15px;cursor:pointer;font-family:inherit}
+  .tire-tab.active{background:var(--red);border-color:var(--red)}
+  .tire-tools{display:grid;grid-template-columns:200px 1fr;gap:14px;margin-bottom:16px}
+  .tire-tools select,.tire-tools input{width:100%;padding:13px 14px;border-radius:6px;border:1px solid #4a4a4a;background:#fff;color:var(--ink);font-family:'Inter',Arial,sans-serif;font-size:15px}
+  .tire-list{background:#fff;color:var(--ink);border-radius:8px;max-height:460px;overflow:auto}
+  .tire-row{display:grid;grid-template-columns:1.3fr 1fr 1.1fr auto;gap:14px;align-items:center;padding:14px 18px;border-bottom:1px solid var(--line)}
+  .tire-row:last-child{border-bottom:0}
+  .tire-dim{font-weight:800;font-size:17px}
+  .tire-brand{color:var(--muted);font-size:14px}
+  .tire-price strong{font-size:20px;color:var(--red)}
+  .tire-price s{color:var(--muted);font-size:14px;margin-left:8px}
+  .tire-row .btn{min-height:40px;padding:8px 14px;font-size:14px}
+  .tire-empty{padding:26px 18px;color:var(--muted)}
+  .tire-note{margin-top:14px;font-size:13px;color:#cfcfcf}
+  @media (max-width:700px){
+    .tire-tools{grid-template-columns:1fr}
+    .tire-row{grid-template-columns:1fr auto;row-gap:6px}
+    .tire-brand{grid-column:1}
+    .tire-price{grid-column:1}
+    .tire-row .btn{grid-column:2;grid-row:1 / span 3}
+  }
+
 
   @media (max-width:620px){
     .field-row{grid-template-columns:1fr}
@@ -196,8 +228,8 @@
     .section-head{display:block}
     .section-head p{margin-top:12px}
     .services-grid{grid-template-columns:1fr 1fr}
-    .split,.contact-grid{grid-template-columns:1fr}
-    .gallery{grid-template-columns:repeat(2,1fr)}
+    .split,.contact-grid,.gallery{grid-template-columns:1fr}
+    .service-promo-card{grid-template-columns:1fr}
     .photo-frame img{height:340px}
     .gallery img{height:220px}
     .cta-band .wrap{display:block}
@@ -218,7 +250,6 @@
     .hero-actions .btn{width:100%}
     section{padding:58px 0}
     .services-grid{grid-template-columns:1fr}
-    .gallery{grid-template-columns:1fr}
     .service{min-height:auto}
     .badge{position:static;margin-top:-52px;margin-left:16px;margin-right:16px}
     .contact-panel{padding:22px}
@@ -248,6 +279,8 @@
     </a>
     <nav aria-label="Navigation principale">
       <a href="#services">Services</a>
+      <a href="#promotions">Promotions</a>
+      <a href="#pneus">Pneus d'hiver</a>
       <a href="#astuce">Astuce du jour</a>
       <a href="#rendez-vous">Rendez-vous</a>
       <a href="#atelier">Atelier</a>
@@ -270,7 +303,7 @@
         </div>
         <div class="quick-card" aria-label="Informations rapides">
           <div><strong>Diagnostic clair</strong><span>Explications avant les travaux</span></div>
-          <div><strong>Ouvert 7 jours</strong><span>9h00 - 18h00, tous les jours</span></div>
+          <div><strong>Ouvert 7 jours</strong><span>9h00 - 20h00, parfois plus tard</span></div>
           <div><strong>Garage local</strong><span>Freins, pneus, suspension et entretien</span></div>
         </div>
       </div>
@@ -375,6 +408,45 @@
     </div>
   </section>
 
+  <section id="promotions" class="service-promo">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Offres de services pour l'hiver</div>
+          <h2>Préparez votre véhicule pour le froid</h2>
+        </div>
+        <p>Des promotions sont offertes sur le changement de pneus et le traitement antirouille. Appelez-nous pour connaître les prix et les conditions applicables à votre véhicule.</p>
+      </div>
+      <div class="service-promo-card">
+        <div><h3>Changement de pneus et antirouille</h3><p>La disponibilité et le prix final sont confirmés par téléphone avant le rendez-vous.</p></div>
+        <a class="btn btn-primary" href="tel:+15146010552">Appeler pour les promotions</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="pneus" class="promo-band" aria-label="Pneus d'hiver et jantes en acier">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Saison d'hiver</div>
+          <h2>Pneus d'hiver : trouvez votre dimension</h2>
+          <div class="promo-pill" id="tire-pill" hidden></div>
+        </div>
+        <p>Entrez la dimension inscrite sur le flanc de votre pneu (ex. 205/55R16) ou choisissez le diamètre de votre jante. Pas sûr ? Appelez-nous, on vous aide.</p>
+      </div>
+      <div class="tire-tabs" role="tablist">
+        <button type="button" class="tire-tab active" id="tab-pneus" role="tab" aria-selected="true">Pneus d'hiver</button>
+        <button type="button" class="tire-tab" id="tab-jantes" role="tab" aria-selected="false">Jantes en acier</button>
+      </div>
+      <div class="tire-tools">
+        <select id="tire-diam" aria-label="Diamètre de la jante"><option value="">Tous les diamètres</option></select>
+        <input type="search" id="tire-search" placeholder="Rechercher une dimension, ex. 205/55R16" aria-label="Rechercher une dimension de pneu" autocomplete="off">
+      </div>
+      <div class="tire-list" id="tire-list" aria-live="polite"><div class="tire-empty">Chargement des pneus…</div></div>
+      <p class="tire-note" id="tire-note"></p>
+    </div>
+  </section>
+
   <section id="rendez-vous">
     <div class="wrap">
       <div class="section-head">
@@ -433,9 +505,11 @@
           </div>
 
           <div class="field">
-            <label for="photos">Photos à l'appui (optionnel)</label>
-            <input type="file" id="photos" name="photos" accept="image/*" multiple>
-            <div class="field-hint">Une photo du problème (fuite, voyant allumé, usure...) nous aide énormément à préparer votre visite.</div>
+            <label>Photos à l'appui (optionnel, 3 maximum)</label>
+            <input type="file" id="photo-1" name="photo_1" accept="image/*" aria-label="Première photo">
+            <input type="file" id="photo-2" name="photo_2" accept="image/*" aria-label="Deuxième photo">
+            <input type="file" id="photo-3" name="photo_3" accept="image/*" aria-label="Troisième photo">
+            <div class="field-hint">Joignez jusqu'à 3 photos. La taille totale de la demande ne doit pas dépasser 8 Mo.</div>
           </div>
 
           <div class="field">
@@ -469,22 +543,6 @@
         <figure>
           <img src="atelier.jpg" alt="Véhicules en réparation dans l'atelier" loading="lazy">
           <figcaption>L'atelier en service pour la mécanique générale.</figcaption>
-        </figure>
-        <figure>
-          <img src="atelier-2.jpg" alt="Ponts élévateurs et équipement de l'atelier" loading="lazy">
-          <figcaption>Nos ponts élévateurs et notre équipement d'atelier.</figcaption>
-        </figure>
-        <figure>
-          <img src="pneus.jpg" alt="Inventaire de pneus du garage" loading="lazy">
-          <figcaption>Notre inventaire de pneus, toutes saisons.</figcaption>
-        </figure>
-        <figure>
-          <img src="atelier-3.jpg" alt="Poste de travail équipé pour la mécanique générale" loading="lazy">
-          <figcaption>Poste de travail équipé pour la mécanique générale.</figcaption>
-        </figure>
-        <figure>
-          <img src="facade-enseigne.jpg" alt="Enseigne du Garage Auto Service Plus" loading="lazy">
-          <figcaption>Enseigne du garage, facile à repérer sur la 1re Avenue.</figcaption>
         </figure>
       </div>
     </div>
@@ -525,21 +583,21 @@
           </div>
           <div class="hours-note">
             <strong>Ouvert 7 jours sur 7</strong>
-            <span>9h00 à 18h00, tous les jours de la semaine.</span>
+            <span>9h00 à 20h00 tous les jours. Selon l'achalandage, nous restons parfois ouverts plus tard : appelez-nous.</span>
           </div>
           <table class="hours" aria-label="Heures d'ouverture">
-            <tr><td>Lundi - Vendredi</td><td>9h00 - 18h00</td></tr>
-            <tr><td>Samedi - Dimanche</td><td>9h00 - 18h00</td></tr>
+            <tr><td>Lundi - Vendredi</td><td>9h00 - 20h00</td></tr>
+            <tr><td>Samedi - Dimanche</td><td>9h00 - 20h00</td></tr>
           </table>
         </div>
         <div class="map">
-          <iframe title="Carte près de Garage Auto Service Plus" loading="lazy" src="https://www.google.com/maps?q=place_id:ChIJqdLrNF8XyUwRB0EoSDsz678&output=embed"></iframe>
+          <iframe title="Carte près de Garage Auto Service Plus" loading="lazy" src="https://www.google.com/maps?q=45.4392204,-73.6643281&z=17&output=embed"></iframe>
           <div class="map-fallback">
             <div>
               <strong>Garage Auto Service Plus</strong>
               <span>420, 1re Avenue, Lachine, QC H8S 2S3</span>
             </div>
-            <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=Garage+Auto+Service+Plus+Lachine&query_place_id=ChIJqdLrNF8XyUwRB0EoSDsz678" target="_blank" rel="noopener">Ouvrir la carte</a>
+            <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=420%2C%201re%20Avenue%2C%20Lachine%2C%20QC%20H8S%202S3" target="_blank" rel="noopener">Ouvrir l'itinéraire</a>
           </div>
         </div>
       </div>
@@ -616,6 +674,91 @@
       .catch(function(){ /* on garde les 2 photos statiques déjà dans le HTML */ });
   })();
 </script>
+<script>
+(function(){
+  var list=document.getElementById('tire-list'), sel=document.getElementById('tire-diam'), inp=document.getElementById('tire-search');
+  var pill=document.getElementById('tire-pill'), note=document.getElementById('tire-note');
+  var tabP=document.getElementById('tab-pneus'), tabJ=document.getElementById('tab-jantes');
+  var data=null, mode='pneus';
+  var NOTES={
+    pneus:"Prix par pneu, avant taxes. Pose et équilibrage non inclus. Disponibilité à confirmer avec nous avant de vous déplacer.",
+    jantes:"Prix par jante, avant taxes. Pas sûr de la compatibilité avec votre véhicule ? Donnez-nous la marque, le modèle et l'année, nous vérifions."
+  };
+  function money(n){ return n.toLocaleString('fr-CA',{style:'currency',currency:'CAD'}); }
+  function norm(t){ return String(t).toUpperCase().replace(/[^A-Z0-9.]/g,''); }
+  function diamOf(p){
+    if(mode==='pneus'){ var m=/R(\d{2})/.exec(p.dimension); return m?m[1]:''; }
+    var k=/^(\d{2})x/.exec(p.modele); return k?k[1]:'';
+  }
+  function rabaisOf(){ return Number(mode==='pneus'?data.rabais_pourcent:data.rabais_jantes_pourcent)||0; }
+  function items(){ return (mode==='pneus'?data.pneus:data.jantes)||[]; }
+  function fillDiams(){
+    sel.innerHTML='<option value="">Tous les diamètres</option>';
+    var ds={}; items().forEach(function(p){ var d=diamOf(p); if(d) ds[d]=1; });
+    Object.keys(ds).sort().forEach(function(d){ var o=document.createElement('option'); o.value=d; o.textContent=d+' pouces'; sel.appendChild(o); });
+    inp.placeholder = mode==='pneus' ? 'Rechercher une dimension, ex. 205/55R16' : 'Rechercher, ex. 5x114.3';
+  }
+  function render(){
+    if(!data) return;
+    var q=norm(inp.value), dm=sel.value, out=[], rb=rabaisOf();
+    items().forEach(function(p){
+      if(dm && diamOf(p)!==dm) return;
+      var label = mode==='pneus' ? p.dimension : p.modele+' '+p.details;
+      if(q && norm(label).indexOf(q)===-1) return;
+      out.push(p);
+    });
+    list.innerHTML='';
+    if(!out.length){
+      var e=document.createElement('div'); e.className='tire-empty';
+      e.textContent='Aucun résultat. Appelez-nous au 514 601 0552, nous pouvons peut-être le commander.';
+      list.appendChild(e); return;
+    }
+    out.forEach(function(p){
+      var row=document.createElement('div'); row.className='tire-row';
+      var d=document.createElement('div'); d.className='tire-dim'; d.textContent = mode==='pneus' ? p.dimension : p.modele;
+      var b=document.createElement('div'); b.className='tire-brand'; b.textContent = mode==='pneus' ? p.marque : p.details;
+      var pr=document.createElement('div'); pr.className='tire-price';
+      var shown = rb>0 ? p.prix*(1-rb/100) : p.prix;
+      var st=document.createElement('strong'); st.textContent=money(shown); pr.appendChild(st);
+      if(rb>0){ var sd=document.createElement('s'); sd.textContent=money(p.prix); pr.appendChild(sd); }
+      var btn=document.createElement('a'); btn.className='btn btn-primary'; btn.href='#rendez-vous'; btn.textContent='Demander';
+      btn.addEventListener('click',function(){
+        var svc=document.getElementById('service'), desc=document.getElementById('description');
+        if(svc) svc.value = mode==='pneus' ? 'Pneus' : 'Je ne sais pas / autre';
+        if(desc && !desc.value){
+          desc.value = mode==='pneus'
+            ? "Pneus d'hiver "+p.dimension+" ("+p.marque+"), quantité : 4. Prix affiché : "+money(shown)+" par pneu."
+            : "Jantes en acier "+p.modele+" ("+p.details+"), quantité : 4. Prix affiché : "+money(shown)+" par jante. Véhicule (marque, modèle, année) : ";
+        }
+      });
+      row.appendChild(d); row.appendChild(b); row.appendChild(pr); row.appendChild(btn);
+      list.appendChild(row);
+    });
+  }
+  function setMode(m){
+    mode=m;
+    tabP.classList.toggle('active',m==='pneus'); tabJ.classList.toggle('active',m==='jantes');
+    tabP.setAttribute('aria-selected',m==='pneus'); tabJ.setAttribute('aria-selected',m==='jantes');
+    note.textContent=NOTES[m]; inp.value=''; fillDiams(); render();
+  }
+  fetch('/data/pneus.json').then(function(r){ if(!r.ok) throw 0; return r.json(); }).then(function(j){
+    data=j;
+    var rb=Number(j.rabais_pourcent)||0;
+    if(rb>0){
+      pill.textContent='-'+rb+' % sur les pneus d\'hiver'+(j.valide_jusqua?' jusqu\'au '+j.valide_jusqua:'');
+      pill.hidden=false;
+    }
+    if(!(j.jantes&&j.jantes.length)) tabJ.style.display='none';
+    setMode('pneus');
+  }).catch(function(){
+    list.innerHTML=''; var e=document.createElement('div'); e.className='tire-empty';
+    e.textContent='Les prix ne sont pas disponibles pour le moment. Appelez-nous au 514 601 0552.'; list.appendChild(e);
+  });
+  sel.addEventListener('change',render); inp.addEventListener('input',render);
+  tabP.addEventListener('click',function(){ if(data) setMode('pneus'); });
+  tabJ.addEventListener('click',function(){ if(data) setMode('jantes'); });
+})();
+</script>
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
   if (window.netlifyIdentity) {
@@ -630,3 +773,4 @@
 </script>
 </body>
 </html>
+
