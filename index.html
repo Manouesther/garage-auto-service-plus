@@ -114,6 +114,10 @@
   .quick-card div{background:rgba(255,255,255,.95);color:var(--ink);padding:18px}
   .quick-card strong{display:block;font-size:15px;margin-bottom:4px}
   .quick-card span{display:block;color:var(--muted);font-size:14px}
+  .hero-hours-note{display:flex;align-items:center;gap:12px;margin-top:14px;padding:12px 16px;border:1px solid rgba(255,255,255,.28);border-radius:8px;background:rgba(23,23,23,.72);backdrop-filter:blur(8px);color:#fff;font-size:14px}
+  .hero-hours-note strong{white-space:nowrap;color:#fff}
+  .hero-hours-note span{color:rgba(255,255,255,.82)}
+  .hero-hours-note a{margin-left:auto;color:#fff;font-weight:800;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
 
   section{padding:82px 0}
   .section-head{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:34px}
@@ -248,6 +252,8 @@
     .topbar span{display:none}
     .hero,.hero .wrap{min-height:650px}
     .quick-card{grid-template-columns:1fr}
+    .hero-hours-note{align-items:flex-start;flex-wrap:wrap;font-size:13px}
+    .hero-hours-note a{margin-left:0}
     .section-head{display:block}
     .section-head p{margin-top:12px}
     .services-grid{grid-template-columns:1fr 1fr}
@@ -337,6 +343,7 @@
           <div><strong>Ouvert 7 jours</strong><span>9h00 - 20h00, parfois plus tard</span></div>
           <div><strong>Garage local</strong><span>Freins, pneus, suspension et entretien</span></div>
         </div>
+        <p class="hero-hours-note"><strong>Ouvert chaque jour, 9h à 20h.</strong><span>Selon l’achalandage, nous fermons parfois plus tard. Appelez pour confirmer.</span><a href="tel:+15146010552">514 601 0552</a></p>
       </div>
     </div>
   </section>
@@ -583,6 +590,22 @@
           <img src="atelier.jpg" alt="Véhicules en réparation dans l'atelier" loading="lazy">
           <figcaption>L'atelier en service pour la mécanique générale.</figcaption>
         </figure>
+        <figure>
+          <img src="atelier-2.jpg" alt="Ponts élévateurs et équipement d'atelier" loading="lazy">
+          <figcaption>Nos ponts élévateurs et notre équipement d'atelier.</figcaption>
+        </figure>
+        <figure>
+          <img src="pneus.jpg" alt="Pneus entreposés dans le garage" loading="lazy">
+          <figcaption>Notre inventaire de pneus, toutes saisons.</figcaption>
+        </figure>
+        <figure>
+          <img src="atelier-3.jpg" alt="Poste de travail de mécanique générale" loading="lazy">
+          <figcaption>Un poste de travail équipé pour la mécanique générale.</figcaption>
+        </figure>
+        <figure>
+          <img src="facade-enseigne.jpg" alt="Enseigne du Garage Auto Service Plus à Lachine" loading="lazy">
+          <figcaption>Notre enseigne au 420, 1re Avenue.</figcaption>
+        </figure>
       </div>
     </div>
   </section>
@@ -691,13 +714,13 @@
       document.getElementById('tip-text').textContent = (tip && tip.text) ? tip.text : tip;
       document.getElementById('tip-meta').textContent = new Date().toLocaleDateString('fr-CA', { day:'numeric', month:'long', year:'numeric' });
     }
-    fetch('/data/astuces.json').then(function(r){ if(!r.ok) throw 0; return r.json(); })
+    fetch('data/astuces.json?v=20261022-2',{cache:'no-store'}).then(function(r){ if(!r.ok) throw 0; return r.json(); })
       .then(function(data){ renderTip(data.items && data.items.length ? data.items : astuces); })
       .catch(function(){ renderTip(astuces); });
   })();
 
   (function(){
-    fetch('/data/galerie.json').then(function(r){ if(!r.ok) throw 0; return r.json(); })
+    fetch('data/galerie.json?v=20261022-2',{cache:'no-store'}).then(function(r){ if(!r.ok) throw 0; return r.json(); })
       .then(function(data){
         if(!data.photos || !data.photos.length) return;
         var grid = document.getElementById('gallery-grid');
@@ -782,7 +805,7 @@
     tabP.setAttribute('aria-selected',m==='pneus'); tabJ.setAttribute('aria-selected',m==='jantes');
     note.textContent=NOTES[m]; inp.value=''; fillDiams(); render();
   }
-  fetch('/data/pneus.json').then(function(r){ if(!r.ok) throw 0; return r.json(); }).then(function(j){
+  fetch('data/pneus.json?v=20261022-2',{cache:'no-store'}).then(function(r){ if(!r.ok) throw 0; return r.json(); }).then(function(j){
     data=j;
     var rb=Number(j.rabais_pourcent)||0;
     if(rb>0){
