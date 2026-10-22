@@ -5,492 +5,590 @@
     {
       "dimension": "175/65R14",
       "marque": "Sunwide",
-      "prix": 90
+      "prix": 74.25,
+      "repere_concurrent_cad": 82.0
     },
     {
       "dimension": "175/70R14",
       "marque": "Sunwide",
-      "prix": 90
+      "prix": 74.75,
+      "repere_concurrent_cad": 82.8
     },
     {
       "dimension": "185/65R14",
       "marque": "Sunwide",
-      "prix": 95
+      "prix": 79.5,
+      "repere_concurrent_cad": 90.4
     },
     {
       "dimension": "185/70R14",
       "marque": "Sunwide",
-      "prix": 95
+      "prix": 79.5,
+      "repere_concurrent_cad": 97.6
     },
     {
       "dimension": "185/55R15",
       "marque": "Sunwide",
-      "prix": 95
+      "prix": 79.5,
+      "repere_concurrent_cad": 90.4
     },
     {
       "dimension": "185/60R15",
       "marque": "Sunwide",
-      "prix": 93
+      "prix": 77.25,
+      "repere_concurrent_cad": 86.8
     },
     {
       "dimension": "185/65R15",
       "marque": "Sunwide",
-      "prix": 96
+      "prix": 80.25,
+      "repere_concurrent_cad": 91.17
     },
     {
       "dimension": "195/55R15",
       "marque": "Sunwide",
-      "prix": 98
+      "prix": 83.0,
+      "repere_concurrent_cad": 96.0
     },
     {
       "dimension": "195/60R15",
       "marque": "Sunwide",
-      "prix": 95
+      "prix": 79.75,
+      "repere_concurrent_cad": 90.8
     },
     {
       "dimension": "195/65R15",
       "marque": "Sunwide",
-      "prix": 98
+      "prix": 82.47,
+      "repere_concurrent_cad": 86.82
     },
     {
       "dimension": "195/50R16",
       "marque": "Sunwide",
-      "prix": 100
+      "prix": 84.5,
+      "repere_concurrent_cad": 98.4
     },
     {
       "dimension": "195/55R16",
       "marque": "Sunwide",
-      "prix": 102
+      "prix": 87.0,
+      "repere_concurrent_cad": 100.8
     },
     {
       "dimension": "205/55R16",
       "marque": "Sunwide",
-      "prix": 102
+      "prix": 86.25,
+      "repere_concurrent_cad": 100.02
     },
     {
       "dimension": "205/60R16",
       "marque": "Sunwide",
-      "prix": 104
+      "prix": 89.0,
+      "repere_concurrent_cad": 105.6
     },
     {
       "dimension": "205/65R16",
       "marque": "Wanli ou Haida",
-      "prix": 109
+      "prix": 93.5,
+      "repere_concurrent_cad": 112.8
     },
     {
       "dimension": "215/55R16",
       "marque": "Sunwide",
-      "prix": 107
+      "prix": 92.0,
+      "repere_concurrent_cad": 110.4
     },
     {
       "dimension": "215/60R16",
       "marque": "Sunwide",
-      "prix": 111
+      "prix": 95.5,
+      "repere_concurrent_cad": 116.0
     },
     {
       "dimension": "215/65R16",
       "marque": "Wanli",
-      "prix": 115
+      "prix": 99.5,
+      "repere_concurrent_cad": 122.4
     },
     {
       "dimension": "215/70R16",
       "marque": "Sunwide",
-      "prix": 127
+      "prix": 111.5,
+      "repere_concurrent_cad": 141.6
     },
     {
       "dimension": "225/55R16",
       "marque": "Sunwide",
-      "prix": 111
+      "prix": 95.5,
+      "repere_concurrent_cad": 116.0
     },
     {
       "dimension": "225/60R16",
       "marque": "Sunwide",
-      "prix": 113
+      "prix": 97.75,
+      "repere_concurrent_cad": 119.6
     },
     {
       "dimension": "225/65R16",
       "marque": "Haida",
-      "prix": 115
+      "prix": 99.25,
+      "repere_concurrent_cad": 122.0
     },
     {
       "dimension": "235/70R16",
       "marque": "Sunwide",
-      "prix": 137
+      "prix": 121.5,
+      "repere_concurrent_cad": 157.6
     },
     {
       "dimension": "205/45R17",
       "marque": "Sunwide",
-      "prix": 104
+      "prix": 88.5,
+      "repere_concurrent_cad": 104.8
     },
     {
       "dimension": "205/50R17",
       "marque": "Sunwide",
-      "prix": 106
+      "prix": 90.75,
+      "repere_concurrent_cad": 108.4
     },
     {
       "dimension": "205/55R17",
       "marque": "Wanli ou Sunwide",
-      "prix": 109
+      "prix": 93.5,
+      "repere_concurrent_cad": 115.2
     },
     {
       "dimension": "215/45R17",
       "marque": "Sunwide",
-      "prix": 107
+      "prix": 92.0,
+      "repere_concurrent_cad": 110.4
     },
     {
       "dimension": "215/50R17",
       "marque": "Sunwide",
-      "prix": 110
+      "prix": 94.75,
+      "repere_concurrent_cad": 104.22
     },
     {
       "dimension": "215/55R17",
       "marque": "Sunwide",
-      "prix": 110
+      "prix": 94.75,
+      "repere_concurrent_cad": 114.8
     },
     {
       "dimension": "215/60R17",
       "marque": "Sunwide",
-      "prix": 120
+      "prix": 104.25,
+      "repere_concurrent_cad": 130.0
     },
     {
       "dimension": "215/65R17",
       "marque": "Sunwide",
-      "prix": 128
+      "prix": 112.25,
+      "repere_concurrent_cad": 142.8
     },
     {
       "dimension": "225/45R17",
       "marque": "Sunwide",
-      "prix": 110
+      "prix": 95.0,
+      "repere_concurrent_cad": 115.2
     },
     {
       "dimension": "225/50R17",
       "marque": "Sunwide",
-      "prix": 113
+      "prix": 97.5,
+      "repere_concurrent_cad": 119.2
     },
     {
       "dimension": "225/55R17",
       "marque": "Sunwide",
-      "prix": 117
+      "prix": 101.25,
+      "repere_concurrent_cad": 125.2
     },
     {
       "dimension": "225/60R17",
       "marque": "Sunwide",
-      "prix": 119
+      "prix": 103.5,
+      "repere_concurrent_cad": 126.0
     },
     {
       "dimension": "225/65R17",
       "marque": "Sunwide",
-      "prix": 129
+      "prix": 113.5,
+      "repere_concurrent_cad": 144.8
     },
     {
       "dimension": "235/45R17",
       "marque": "Sunwide",
-      "prix": 118
+      "prix": 103.0,
+      "repere_concurrent_cad": 128.0
     },
     {
       "dimension": "235/55R17",
       "marque": "Sunwide",
-      "prix": 128
+      "prix": 113.0,
+      "repere_concurrent_cad": 144.0
     },
     {
       "dimension": "235/60R17",
       "marque": "Sunwide",
-      "prix": 125
+      "prix": 109.25,
+      "repere_concurrent_cad": 138.0
     },
     {
       "dimension": "235/65R17",
       "marque": "Sunwide",
-      "prix": 135
+      "prix": 119.25,
+      "repere_concurrent_cad": 136.84
     },
     {
       "dimension": "245/45R17",
       "marque": "Sunwide",
-      "prix": 114
+      "prix": 98.5,
+      "repere_concurrent_cad": 120.8
     },
     {
       "dimension": "215/55R18",
       "marque": "Wanli",
-      "prix": 122
+      "prix": 107.0,
+      "repere_concurrent_cad": 132.8
     },
     {
       "dimension": "225/40R18",
       "marque": "Sunwide",
-      "prix": 115
+      "prix": 99.75,
+      "repere_concurrent_cad": 121.2
     },
     {
       "dimension": "225/45R18",
       "marque": "Sunwide",
-      "prix": 120
+      "prix": 104.25,
+      "repere_concurrent_cad": 128.4
     },
     {
       "dimension": "225/50R18",
       "marque": "Sunwide",
-      "prix": 120
+      "prix": 104.5,
+      "repere_concurrent_cad": 128.8
     },
     {
       "dimension": "225/55R18",
       "marque": "Sunwide",
-      "prix": 126
+      "prix": 111.0,
+      "repere_concurrent_cad": 139.2
     },
     {
       "dimension": "225/60R18",
       "marque": "Sunwide",
-      "prix": 132
+      "prix": 116.75,
+      "repere_concurrent_cad": 148.4
     },
     {
       "dimension": "235/40R18",
       "marque": "Haida",
-      "prix": 119
+      "prix": 103.5,
+      "repere_concurrent_cad": 127.2
     },
     {
       "dimension": "235/45R18",
       "marque": "Sunwide",
-      "prix": 125
+      "prix": 110.0,
+      "repere_concurrent_cad": 137.6
     },
     {
       "dimension": "235/50R18",
       "marque": "Wanli",
-      "prix": 129
+      "prix": 114.0,
+      "repere_concurrent_cad": 130.31
     },
     {
       "dimension": "235/55R18",
       "marque": "Wanli",
-      "prix": 136
+      "prix": 120.75,
+      "repere_concurrent_cad": 154.8
     },
     {
       "dimension": "235/60R18",
       "marque": "Sunwide",
-      "prix": 136
+      "prix": 121.0,
+      "repere_concurrent_cad": 155.2
     },
     {
       "dimension": "235/65R18",
       "marque": "Sunwide",
-      "prix": 142
+      "prix": 127.0,
+      "repere_concurrent_cad": 164.8
     },
     {
       "dimension": "245/40R18",
       "marque": "Sunwide",
-      "prix": 128
+      "prix": 112.25,
+      "repere_concurrent_cad": 141.2
     },
     {
       "dimension": "245/45R18",
       "marque": "Sunwide",
-      "prix": 125
+      "prix": 109.25,
+      "repere_concurrent_cad": 136.4
     },
     {
       "dimension": "245/50R18",
       "marque": "Sunwide",
-      "prix": 136
+      "prix": 120.25,
+      "repere_concurrent_cad": 154.0
     },
     {
       "dimension": "245/60R18",
       "marque": "Wanli",
-      "prix": 142
+      "prix": 126.75,
+      "repere_concurrent_cad": 164.4
     },
     {
       "dimension": "255/40R18",
       "marque": "Sunwide",
-      "prix": 131
+      "prix": 116.0,
+      "repere_concurrent_cad": 147.2
     },
     {
       "dimension": "255/55R18",
       "marque": "Sunwide",
-      "prix": 142
+      "prix": 127.0,
+      "repere_concurrent_cad": 164.8
     },
     {
       "dimension": "265/60R18",
       "marque": "Sunwide",
-      "prix": 155
+      "prix": 138.75,
+      "repere_concurrent_cad": 183.6
     },
     {
       "dimension": "275/65R18",
       "marque": "Haida",
-      "prix": 177
+      "prix": 159.0,
+      "repere_concurrent_cad": 216.0
     },
     {
       "dimension": "225/40R19",
       "marque": "Wanli",
-      "prix": 121
+      "prix": 105.5,
+      "repere_concurrent_cad": 130.4
     },
     {
       "dimension": "225/45R19",
       "marque": "Sunwide",
-      "prix": 125
+      "prix": 109.5,
+      "repere_concurrent_cad": 136.8
     },
     {
       "dimension": "225/55R19",
       "marque": "Sunwide",
-      "prix": 135
+      "prix": 120.0,
+      "repere_concurrent_cad": 153.6
     },
     {
       "dimension": "235/35R19",
       "marque": "Haida",
-      "prix": 125
+      "prix": 110.0,
+      "repere_concurrent_cad": 137.6
     },
     {
       "dimension": "235/40R19",
       "marque": "Sunwide",
-      "prix": 123
+      "prix": 107.25,
+      "repere_concurrent_cad": 133.2
     },
     {
       "dimension": "235/45R19",
       "marque": "Wanli",
-      "prix": 132
+      "prix": 116.75,
+      "repere_concurrent_cad": 148.4
     },
     {
       "dimension": "235/50R19",
       "marque": "Sunwide",
-      "prix": 137
+      "prix": 121.5,
+      "repere_concurrent_cad": 156.0
     },
     {
       "dimension": "235/55R19",
       "marque": "Sunwide",
-      "prix": 141
+      "prix": 126.0,
+      "repere_concurrent_cad": 163.2
     },
     {
       "dimension": "245/40R19",
       "marque": "Sunwide",
-      "prix": 136
+      "prix": 120.75,
+      "repere_concurrent_cad": 154.8
     },
     {
       "dimension": "245/45R19",
       "marque": "Sunwide",
-      "prix": 132
+      "prix": 117.0,
+      "repere_concurrent_cad": 148.8
     },
     {
       "dimension": "245/50R19",
       "marque": "Wanli",
-      "prix": 141
+      "prix": 126.0,
+      "repere_concurrent_cad": 163.2
     },
     {
       "dimension": "245/55R19",
       "marque": "Haida",
-      "prix": 147
+      "prix": 131.25,
+      "repere_concurrent_cad": 171.6
     },
     {
       "dimension": "255/35R19",
       "marque": "Sunwide",
-      "prix": 131
+      "prix": 116.0,
+      "repere_concurrent_cad": 147.2
     },
     {
       "dimension": "255/40R19",
       "marque": "Haida",
-      "prix": 141
+      "prix": 126.0,
+      "repere_concurrent_cad": 163.2
     },
     {
       "dimension": "255/45R19",
       "marque": "Sunwide",
-      "prix": 135
+      "prix": 119.75,
+      "repere_concurrent_cad": 153.2
     },
     {
       "dimension": "255/50R19",
       "marque": "Sunwide",
-      "prix": 148
+      "prix": 132.75,
+      "repere_concurrent_cad": 174.0
     },
     {
       "dimension": "265/55R19",
       "marque": "Sunwide",
-      "prix": 157
+      "prix": 140.75,
+      "repere_concurrent_cad": 186.8
     },
     {
       "dimension": "235/45R20",
       "marque": "Haida",
-      "prix": 137
+      "prix": 121.25,
+      "repere_concurrent_cad": 155.6
     },
     {
       "dimension": "235/50R20",
       "marque": "Haida",
-      "prix": 147
+      "prix": 131.75,
+      "repere_concurrent_cad": 172.4
     },
     {
       "dimension": "235/55R20",
       "marque": "Sunwide",
-      "prix": 149
+      "prix": 134.0,
+      "repere_concurrent_cad": 176.0
     },
     {
       "dimension": "245/35R20",
       "marque": "Haida",
-      "prix": 133
+      "prix": 117.5,
+      "repere_concurrent_cad": 149.6
     },
     {
       "dimension": "245/40R20",
       "marque": "Sunwide",
-      "prix": 140
+      "prix": 124.75,
+      "repere_concurrent_cad": 161.2
     },
     {
       "dimension": "245/45R20",
       "marque": "Sunwide",
-      "prix": 139
+      "prix": 123.25,
+      "repere_concurrent_cad": 158.8
     },
     {
       "dimension": "245/50R20",
       "marque": "Wanli",
-      "prix": 145
+      "prix": 129.75,
+      "repere_concurrent_cad": 169.2
     },
     {
       "dimension": "255/35R20",
       "marque": "Haida",
-      "prix": 136
+      "prix": 120.25,
+      "repere_concurrent_cad": 154.0
     },
     {
       "dimension": "255/40R20",
       "marque": "Sunwide",
-      "prix": 141
+      "prix": 126.0,
+      "repere_concurrent_cad": 163.2
     },
     {
       "dimension": "255/50R20",
       "marque": "Sunwide",
-      "prix": 157
+      "prix": 140.5,
+      "repere_concurrent_cad": 186.4
     },
     {
       "dimension": "255/55R20",
       "marque": "Sunwide",
-      "prix": 164
+      "prix": 147.25,
+      "repere_concurrent_cad": 197.2
     },
     {
       "dimension": "265/50R20",
       "marque": "Haida",
-      "prix": 163
+      "prix": 146.25,
+      "repere_concurrent_cad": 195.6
     },
     {
       "dimension": "275/35R20",
       "marque": "Haida",
-      "prix": 148
+      "prix": 133.0,
+      "repere_concurrent_cad": 174.4
     },
     {
       "dimension": "275/40R20",
       "marque": "Wanli",
-      "prix": 162
+      "prix": 145.75,
+      "repere_concurrent_cad": 194.8
     },
     {
       "dimension": "275/45R20",
       "marque": "Sunwide",
-      "prix": 156
+      "prix": 140.25,
+      "repere_concurrent_cad": 186.0
     },
     {
       "dimension": "275/55R20",
       "marque": "Haida",
-      "prix": 182
+      "prix": 163.5,
+      "repere_concurrent_cad": 223.2
     },
     {
       "dimension": "275/60R20",
       "marque": "Sunwide",
-      "prix": 173
+      "prix": 155.25,
+      "repere_concurrent_cad": 210.0
     },
     {
       "dimension": "315/35R20",
       "marque": "Sunwide",
-      "prix": 187
+      "prix": 168.0,
+      "repere_concurrent_cad": 230.4
     },
     {
       "dimension": "265/45R21",
       "marque": "Sunwide",
-      "prix": 152
+      "prix": 136.75,
+      "repere_concurrent_cad": 180.4
     },
     {
       "dimension": "275/45R21",
       "marque": "Wanli",
-      "prix": 168
+      "prix": 151.0,
+      "repere_concurrent_cad": 203.2
     }
   ],
   "rabais_jantes_pourcent": 0,
@@ -582,4 +680,3 @@
     }
   ]
 }
-
